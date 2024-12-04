@@ -41,14 +41,18 @@
 
     <!-- Unsubscribe Link -->
     <p>If you no longer wish to receive these emails, you can <a href="https://example.com/unsubscribe" target="_blank">unsubscribe here</a>.</p>
+
+    <!-- Responsive Listener Script -->
+    <script>
+        (function (config) { 
+            var s = document.createElement('script'); 
+            s.src = 'https://cdn.virtuoussoftware.com/tracker/virtuous.tracker.shim.dev.js';
+            s.type = 'text/javascript'; 
+            s.onload = function () { virtuousTrackerShim.init(config); };
+            document.getElementsByTagName('script')[0].parentNode.appendChild(s);
+        }({
+            organizationId: '0df45ff1-6392-4eff-9b5d-2e340a1d53f7'
+        }));
+    </script>
 </body>
 </html>
-                        
-<script>
-    (function (config) { var s = document.createElement('script'); s.src = 'https://cdn.virtuoussoftware.com/tracker/virtuous.tracker.shim.dev.js';
-    s.type = 'text/javascript'; s.onload = function () { virtuousTrackerShim.init(config); };
-    document.getElementsByTagName('script')[0].parentNode.appendChild(s);
-    }({
-        organizationId: '0df45ff1-6392-4eff-9b5d-2e340a1d53f7'
-    }));
-</script>
