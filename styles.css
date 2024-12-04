@@ -53,16 +53,21 @@ p {
     margin: 10px 0 20px 0;
 }
 
+/* Center Section */
 section {
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
-    text-align: left;
+    text-align: center;
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    justify-content: center; /* Center contents vertically */
 }
 
 /* Form Styling */
@@ -70,8 +75,9 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
+    width: 100%; /* Full width of container */
+    max-width: 400px; /* Limit width */
+    text-align: left;
 }
 
 form label {
@@ -108,6 +114,7 @@ ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 ul li {
