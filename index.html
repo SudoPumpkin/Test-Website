@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Tracking Test</title>
+</head>
+<body>
+    <h1>Link Tracking Test</h1>
+    <ul>
+        <!-- Standard Links -->
+        <li><a href="http://example.com" target="_blank">HTTP Link</a></li>
+        <li><a href="https://example.com" target="_blank">HTTPS Link</a></li>
+        <li><a href="https://blog.example.com" target="_blank">Subdomain Link</a></li>
+        <li><a href="https://example.com/?utm_source=email&utm_medium=test" target="_blank">Link with Query Parameters</a></li>
+
+        <!-- Special Characters in Links -->
+        <li><a href="https://example.com#section1" target="_blank">Link with Anchors</a></li>
+        <li><a href="https://example.com/page%20name" target="_blank">Link with Special Characters in Path</a></li>
+        <li><a href="https://example.com/page?param1=value1&param2=value2" target="_blank">Link with Multiple Query Parameters</a></li>
+
+        <!-- Shortened Links -->
+        <li><a href="https://bit.ly/3zXexample" target="_blank">Shortened URL</a></li>
+
+        <!-- Edge Cases -->
+        <li><a href="https://example.com/this/is/a/very/long/path/with/lots/of/nested/folders/and/query?param1=value1&param2=value2" target="_blank">Long URL</a></li>
+        <li><a href="https://example.com/测试" target="_blank">Non-ASCII Characters in URL</a></li>
+        <li><a href="https://example.com/download/file.pdf" target="_blank">File Download Link</a></li>
+
+        <!-- External Domains -->
+        <li><a href="https://www.google.com" target="_blank">External Domain Link</a></li>
+
+        <!-- Email-specific Links -->
+        <li><a href="mailto:example@example.com" target="_blank">Mailto Link</a></li>
+        <li><a href="tel:+1234567890" target="_blank">Tel Link</a></li>
+
+        <!-- Faulty Links -->
+        <li><a href="https://example.invalid" target="_blank">Broken Link</a></li>
+        <li><a href="https://tinyurl.com/testredirect" target="_blank">Redirected Link</a></li>
+    </ul>
+
+    <!-- Unsubscribe Link -->
+    <p>If you no longer wish to receive these emails, you can <a href="https://example.com/unsubscribe" target="_blank">unsubscribe here</a>.</p>
+</body>
+</html>
+                        
+<script>
+    (function (config) { var s = document.createElement('script'); s.src = 'https://cdn.virtuoussoftware.com/tracker/virtuous.tracker.shim.dev.js';
+    s.type = 'text/javascript'; s.onload = function () { virtuousTrackerShim.init(config); };
+    document.getElementsByTagName('script')[0].parentNode.appendChild(s);
+    }({
+        organizationId: '0df45ff1-6392-4eff-9b5d-2e340a1d53f7'
+    }));
+</script>
