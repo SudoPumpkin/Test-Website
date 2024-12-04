@@ -1,0 +1,86 @@
+/* General Reset */
+body, h1, p, ul, li, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Light gray */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #005ea2; /* Virtuous blue */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0c30f; /* Virtuous gold */
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #005ea2;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+}
+
+ul li {
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #005ea2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #f0c30f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
